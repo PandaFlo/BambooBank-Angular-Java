@@ -1,0 +1,24 @@
+.btn-container {
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 20px 120px; 
+    border: none;
+    background-color: #411212;
+    color: white;
+    border-radius: 8px; 
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  .btn:hover {
+    background-color: #2d6830;
+  }
+  
+  @media (max-width: 768px) {
+    .btn {
+      padding: 15px 80px; 
+      font-size: 20px;
+    }
+  }

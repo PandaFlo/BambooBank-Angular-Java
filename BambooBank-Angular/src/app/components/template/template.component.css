@@ -1,0 +1,17 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#panda-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.container {
+    text-align: center;
+}

@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Employees</h1>
+    <br>
+    <div class = " card-container">
+    <div class="card" *ngFor="let employee of employees" (click)="navigateToEmployee(employee.employeeId)">
+        <div class="container">
+            <h4><b>{{ employee.firstName }} {{ employee.lastName }}</b></h4>
+            <p class="description">Hire Date: {{ employee.hireDate }}</p>
+        </div>
+    </div>
+    </div>
+</div>
+

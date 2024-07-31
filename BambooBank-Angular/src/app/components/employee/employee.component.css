@@ -1,0 +1,23 @@
+.btn-container {
+    text-align: center;
+  }
+  
+  .btn-container button {
+    margin: 10px; /* Increased margin for better spacing */
+    padding: 12px 120px; /* Increased padding for a bigger button */
+    border: none;
+    background-color: #411212;
+    color: white;
+    border-radius: 8px; /* Increased border-radius for a rounded look */
+    cursor: pointer;
+    font-size: 20px; /* Increased font size */
+  }
+  
+  .btn-container button:hover {
+    background-color: #2d6830;
+  }
+  
+  .btn-container .delete-button:hover {
+    background-color: #8f0000;
+  }
+  

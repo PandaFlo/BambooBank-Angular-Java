@@ -1,0 +1,42 @@
+
+<br><br>
+<div class="container">
+<form>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input #firstName type="text" class="form-control" id="firstName" placeholder="Enter first name" value="{{employee.firstName}}">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input #lastName type="text" class="form-control" id="lastName" placeholder="Enter last name" value="{{employee.lastName}}">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input #email type="email" class="form-control" id="email" placeholder="Enter email" value="{{employee.email}}">
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input #address type="text" class="form-control" id="address" placeholder="Enter address" value="{{employee.address}}">
+    </div>
+    <div class="form-group">
+      <label for="salary">Salary</label>
+      <input #salary type="number" class="form-control" id="salary" placeholder="Enter salary" value="{{employee.salary}}">
+    </div>
+    <div class="form-group">
+      <label for="hireDate">Hire Date</label>
+      <input #hireDate type="text" class="form-control" id="hireDate" placeholder="Enter hire date" value="{{employee.hireDate}}"readonly>
+    </div>
+    <div class="btn-container"> 
+   
+
+    <button type="update" class="btn btn-primary" (click)="updateEmployee(firstName.value, 
+                                                                            lastName.value, 
+                                                                            email.value, 
+                                                                            address.value, 
+                                                                            +salary.value, 
+                                                                            hireDate.value)">Update</button> 
+                                                                            
+    <button type="delete" class="btn btn-primary delete-button"  (click)="deleteEmployee()">Delete</button>
+</div>
+</form>
+</div>

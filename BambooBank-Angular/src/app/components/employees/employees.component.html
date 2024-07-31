@@ -1,0 +1,39 @@
+
+<div class="container">
+    <h1>Employees</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Salary</th>
+                <th>Hire Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{ employee.employeeId }}</td>
+                <td>{{ employee.firstName }}</td>
+                <td>{{ employee.lastName }}</td>
+                <td>{{ employee.email }}</td>
+                <td>{{ employee.address }}</td>
+                <td>{{ employee.salary }}</td>
+                <td>{{ employee.hireDate }}</td>
+                <td class="btn-container">
+                    <a [routerLink]="['/employees', employee.employeeId]"><button class="btn btn-primary submit">Update</button></a>
+                    <button type="create" class="btn btn-primary delete-button" (click)="deleteEmployee(employee.employeeId)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="btn-container">
+        <a [routerLink]="['/create']"><button class="btn btn-primary submit">Add New Employee</button></a>
+    </div>
+</div>
+<br><br>
+
