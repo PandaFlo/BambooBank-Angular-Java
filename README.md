@@ -54,9 +54,9 @@ Follow these steps to set up and run Bamboo Bank:
      ```bash
      cd ../frontend
      ```
-   - Start the Angular development server:
+   - Start the Angular development server and open it in your default browser:
      ```bash
-     npm start
+     ng serve -o
      ```
    - The front end will be accessible on port 4200. Ensure port 4200 is open on your machine.
 
