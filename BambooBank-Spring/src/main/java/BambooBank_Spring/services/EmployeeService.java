@@ -1,4 +1,4 @@
-package BambooBank_Angular_Spring.BambooBank_Spring.services;
+package BambooBank_Spring.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,9 +6,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import BambooBank_Angular_Spring.BambooBank_Spring.exceptions.EmployeeNotFoundException;
-import BambooBank_Angular_Spring.BambooBank_Spring.pojos.Employee;
-import BambooBank_Angular_Spring.BambooBank_Spring.repositories.EmployeeRepository;
+import BambooBank_Spring.exceptions.EmployeeNotFoundException;
+import BambooBank_Spring.pojos.Employee;
+import BambooBank_Spring.repositories.EmployeeRepository;
 
 
 @Service

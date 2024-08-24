@@ -1,4 +1,4 @@
-package BambooBank_Angular_Spring.BambooBank_Spring.pojos;
+package BambooBank_Spring.pojos;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

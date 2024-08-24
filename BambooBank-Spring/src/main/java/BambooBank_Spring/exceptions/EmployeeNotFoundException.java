@@ -1,4 +1,4 @@
-package BambooBank_Angular_Spring.BambooBank_Spring.exceptions;
+package BambooBank_Spring.exceptions;
 
 public class EmployeeNotFoundException extends Exception {
 

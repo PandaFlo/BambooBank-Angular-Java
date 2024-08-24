@@ -1,4 +1,4 @@
-package BambooBank_Angular_Spring.BambooBank_Spring;
+package BambooBank_Spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package BambooBank_Angular_Spring.BambooBank_Spring.controller;
+package BambooBank_Spring.controller;
 
 
 import java.net.URI;
@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import BambooBank_Angular_Spring.BambooBank_Spring.exceptions.EmployeeNotFoundException;
-import BambooBank_Angular_Spring.BambooBank_Spring.pojos.Employee;
-import BambooBank_Angular_Spring.BambooBank_Spring.services.EmployeeService;
+import BambooBank_Spring.exceptions.EmployeeNotFoundException;
+import BambooBank_Spring.pojos.Employee;
+import BambooBank_Spring.services.EmployeeService;
 
 
 
@@ -42,9 +42,6 @@ public class EmployeeRestController {
 			this.employeeService = employeeService;
 		}
 	
-
-
-		
 
 
 		@GetMapping
