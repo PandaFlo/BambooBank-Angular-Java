@@ -8,7 +8,7 @@ import { Employee } from '../model/employee';
   providedIn: 'root'
 })
 export class EmployeeService {
-  private url = 'http://localhost:8082/api/v1/test'; 
+  private url = 'http://localhost:8082/api/BambooStalks'; 
   constructor(private http: HttpClient) {}
 
   getEmployees(): Observable<Employee[]> {
@@ -28,7 +28,7 @@ export class EmployeeService {
   }
 
   updateEmployee(employee: Employee): Observable<Employee> {
-    return this.http.put<Employee>(this.url + '/' + employee.employeeId, employee);
+    return this.http.put<Employee>(this.url + '/' + employee.id, employee);
   }
 }
 

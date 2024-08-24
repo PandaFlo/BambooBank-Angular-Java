@@ -12,7 +12,7 @@ export class CreateComponent {
   constructor(private employeeService: EmployeeService, private router: Router){}
 
   employee: Employee = {
-    employeeId: 0,
+    id: 0,
     firstName: '',
     lastName: '',
     email: '',
@@ -33,7 +33,7 @@ export class CreateComponent {
 
     this.employeeService.createEmployee(this.employee).subscribe(
       res => {
-        console.log('Updated employee with ID: ' + this.employee.employeeId);
+        console.log('Updated employee with ID: ' + this.employee.id);
       }
 
     )

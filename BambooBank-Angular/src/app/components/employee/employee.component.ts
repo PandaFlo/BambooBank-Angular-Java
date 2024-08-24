@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 export class EmployeeComponent implements OnInit {
   id: number = 0;
   employee: Employee = {
-    employeeId: 0,
+    id:0,
     firstName: '',
     lastName: '',
     email: '',
@@ -29,6 +29,7 @@ export class EmployeeComponent implements OnInit {
       this.id = +params['id']; 
       this.loadEmployee();
     });
+    
   }
 
   loadEmployee() {
@@ -40,6 +41,7 @@ export class EmployeeComponent implements OnInit {
         console.log('Error loading employee: ', error);
       }
     );
+
   }
 
   deleteEmployee() {
@@ -53,21 +55,7 @@ export class EmployeeComponent implements OnInit {
   }
 
 
-  createEmployee(firstName: string, lastName: string, email: string, address: string, salary: number, hireDate: string) {
-    this.employee.firstName = firstName;
-    this.employee.lastName = lastName;
-    this.employee.email = email;
-    this.employee.address = address;
-    this.employee.salary = salary;
-    this.employee.hireDate = hireDate;
 
-    this.employeeService.createEmployee(this.employee).subscribe(
-      res => {
-        console.log('Updated employee with ID: ' + this.id);
-      },
-
-    )
-  }
 
   updateEmployee(firstName: string, lastName: string, email: string, address: string, salary: number, hireDate: string) {
     this.employee.firstName = firstName;
@@ -79,7 +67,7 @@ export class EmployeeComponent implements OnInit {
 
     this.employeeService.updateEmployee(this.employee).subscribe(
       res => {
-        console.log('Updated employee with ID: ' + this.employee.employeeId);
+        console.log('Updated employee with ID: ' + this.id);
       }
 
     )
